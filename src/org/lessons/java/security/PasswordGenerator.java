@@ -24,6 +24,10 @@ public class PasswordGenerator {
         System.out.println("Inserisci l'anno della tua nacita e premi invio...");
         int yearOfBirth = Integer.parseInt(input.nextLine());
 
+        int sum = dayOfBirth + monthOfBirth + yearOfBirth;
+
+        System.out.println("La password è: " + firstName + "-" + secondName + "-" + favouriteColor + "-" + sum);
+
         input.close();
     }
 }
